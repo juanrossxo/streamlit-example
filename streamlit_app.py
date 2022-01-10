@@ -4,7 +4,6 @@ import math
 import pandas as pd
 import streamlit as st
 import numpy as np
-import cv2
 
 """
 # Welcome to Streamlit!
@@ -16,7 +15,12 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
+sub_title = st.text_input("Name of Equipment")
+st.title(sub_title + "Anchorage Calculation")
 
+
+equipment_type = st.selectbox("Equipment Type", "Mechanical, Electrical, Architectural")
+# for full csv readout of ASCE7-16 equipment types, use csv and pd dataframe
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
