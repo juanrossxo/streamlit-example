@@ -18,8 +18,8 @@ In the meantime, below is an example of what you can do with just a few lines of
 sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
-
-equipment_type = st.selectbox("Equipment Type", 'Mechanical', 'Electrical', 'Architectural')
+asce = pd.DataFrame['Mechanical', 'Electrical', 'Architectural']
+equipment_type = st.selectbox("Equipment Type", asce)
 # for full csv readout of ASCE7-16 equipment types, use csv and pd dataframe
 
 with st.echo(code_location='below'):
