@@ -3,7 +3,7 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
-import cv2
+import opencv as cv2
 
 """
 # Welcome to Streamlit!
