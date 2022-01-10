@@ -19,7 +19,7 @@ sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
 
-equipment_type = st.selectbox("Equipment Type", "Mechanical, Electrical, Architectural")
+equipment_type = st.selectbox("Equipment Type", 'Mechanical', 'Electrical', 'Architectural')
 # for full csv readout of ASCE7-16 equipment types, use csv and pd dataframe
 
 with st.echo(code_location='below'):
