@@ -21,7 +21,6 @@ st.title(sub_title + " Anchorage Calculation")
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
 equip_sel = pd.DataFrame(equip)
-equip_sel
 # df for equipment types
 file = 'https://raw.githubusercontent.com/juanrossxo/streamlit-example/master/Seismic%20Anchorage.csv'
 df_asce_arch = pd.read_csv(file, usecols =[0,1,2,3])
@@ -29,4 +28,14 @@ df_asce_mep = pd.read_csv(file, usecols =[5,6,7,8])
 df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].notna()]
 
 #now create a drop down based on which component, etc.
-equp_sel = st.selectbox('Equipment Type', equip_sel)
+select_equip = st.selectbox('Equipment Type', equip_sel)
+#if statement for types of equipment
+if select_equip = 'Architectural':
+  mep_select = st.selectbox('Equipment Subtype', df_asce_arch)
+  select_df = df_asce_arch.loc[df_asce_arch['Architectural Components'] == mep_select]
+else:
+  select_equip = 'Mechanical and Electrical'
+  arch_select = st.selectbox('Equipment Subtype, df_asce_mep)
+  select_df = df_asce_arch.loc[df_asce_mep['Mechanical and Electrical Components'] == mep_select]
+ap = select_df['Ap']
+st.latex('A_p' = ap) 
