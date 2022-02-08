@@ -18,7 +18,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
-asce = pd.DataFrame[Mechanical, Electrical, Architectural]
+
 equipment_type = st.selectbox("Equipment Type", asce)
 # for full csv readout of ASCE7-16 equipment types, use csv and pd dataframe
 
