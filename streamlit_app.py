@@ -35,7 +35,7 @@ if select_equip == 'Architectural':
   select_df = df_asce_arch.loc[df_asce_arch['Architectural Components'] == select]
 else:
   select_equip == 'Mechanical and Electrical'
-  select = st.selectbox('Equipment Subtype, df_asce_mep)
+  select = st.selectbox('Equipment Subtype', df_asce_mep)
   select_df = df_asce_arch.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 ap = select_df['Ap']
-st.latex('A_p' = ap) 
+st.latex('A_p' = ap)
