@@ -1,5 +1,4 @@
-﻿,,,,,,,,
-Architectural Components,Ap,Rp,Ω0,,Mechanical and Electrical Components,Ap,Rp,Ω0
+﻿Architectural Components,Ap,Rp,Ω0,,Mechanical and Electrical Components,Ap,Rp,Ω0
 INTERIOR NONSTRUCTURAL WALLS AND PARTITIONS,-,-,-,,MECHANICAL AND ELECTRICAL COMPONENTS,,,
 -Plain (unreinforced masonry walls),1,1.5,1.5,,"-Air-side HVACR, fans, Air handlers, Air conditions units, cabinet heaters, Air distribution boxes, and other mechanical components constructed of sheet metal framing",2.5,6,2
 -All other walls and partitions,1,2.5,2,,"-Wet-side HVACR, boilers, furnaces, atmospheric tanks and bins, chillers, water heaters, heat exchangers, evaporators, air separators, manufacturing or processing equipment, and other mechanical components constructed of high-deformability materials",1,2.5,2
