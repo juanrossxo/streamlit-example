@@ -32,8 +32,7 @@ if select_equip == 'Architectural':
 else:
   select_equip == 'Mechanical and Electrical'
   select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep)
-  select_df = df_asce_arch.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
+  select_df = df_asce_mep.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 ap = select_df['Ap']
 ap_print = st.latex('A_p')
-equip = str(select_equp)
-select_df.setindex(equip)
+select_duf
