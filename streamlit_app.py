@@ -38,5 +38,4 @@ else:
   select = st.selectbox('Equipment Subtype', df_asce_mep)
   select_df = df_asce_arch.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 ap = select_df['Ap']
-ap_print = st.latex('A_p')
-ap
+ap_print = st.latex('A_p',ap)
