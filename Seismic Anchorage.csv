@@ -19,18 +19,18 @@ VENEER,-,-,,,VIBRATION-ISOLATED COMPONENTS AND SYSTEMS,-,-,-
 Penthouses (except where framed by an extension of the building frame),2.5,3.5,2,,-Internally isolated components and systems,2.5,2,2
 Ceilings,1,2.5,2,,-Suspended vibration isolated equipment including in-line duct devices and suspended internally isolated components,2.5,2.5,2
 CABINETS,-,-,-,,DISTRIBUTION SYSTEMS,-,-,-
--Permanent floor-supported storage cabinets more than 6ft tall including conents,1,2.5,2,,"-Piping in accordance with ASME B31 (2001, 2002, 2008, 2010), including in-line components with joints made by welding or brazing",,12,2
-"-Permanent floor-supported library shelving, book stacks, and bookshelves more than 6ft tall, including contents",1,2.5,2,,"-Piping in accordance with ASME B31 (2001, 2002, 2008, 2010), including in-line components, constructed by high-or limited-deformability materials, with joints made by threading, bonding, compression couplings, or grooved couplings",,6,2
-Laboratory Equipment,1,2.5,2,,"-Piping and tubing not in accordance with ASME B31, including in-line components, constructed of high-deformability materials, with joints made by welding or brazing",,9,2
-ACCESS FLOORS,-,-,-,,"-Piping and tubing not in accordance with ASME B31, including in-line components, constructed of high-deformability materials, with joints made by threading, bonding, compression couplings, or grooved couplings",,4.5,2
--Special access floors (designed in accordance with 13.5.7.2),1,2.5,2,,"-Piping and tubing constructed of low-deformability materials, such as cast iron, glass, and nonductile plastics",,3,2
--All others,1,1.5,1.5,,"-Ductwork, including in-line components, constructed of high-deformability materials, with joints made by welding or brazing",,9,2
-Appendages and ornamentations,2.5,2.5,2,,"-Ductwork, including in-line components, constructed of high-deformability materials, with joints made by means other than welding or brazing",,6,2
-Signs and Billboards,2.5,3,2,,"-Ductwork, including in-line components, constructed of low-deformability materials, such as cast iron, glass, and nonductile plastics",,3,2
-OTHER RIGID COMPONENTS,-,-,-,,-Electrical conduit and cable trays,,6,2
--High-deformability elements and attachments,1,3.5,2,,-Bus ducts,,2.5,2
--Limited deformability elements and attachments,1,2.5,2,,-Plumbing,,2.5,2
--Low-deformability materials and attachments,1,1.5,1.5,,-Pneumatic tube transport systems,,6,2
+-Permanent floor-supported storage cabinets more than 6ft tall including conents,1,2.5,2,,"-Piping in accordance with ASME B31 (2001, 2002, 2008, 2010), including in-line components with joints made by welding or brazing",2.5,12,2
+"-Permanent floor-supported library shelving, book stacks, and bookshelves more than 6ft tall, including contents",1,2.5,2,,"-Piping in accordance with ASME B31 (2001, 2002, 2008, 2010), including in-line components, constructed by high-or limited-deformability materials, with joints made by threading, bonding, compression couplings, or grooved couplings",2.5,6,2
+Laboratory Equipment,1,2.5,2,,"-Piping and tubing not in accordance with ASME B31, including in-line components, constructed of high-deformability materials, with joints made by welding or brazing",2.5,9,2
+ACCESS FLOORS,-,-,-,,"-Piping and tubing not in accordance with ASME B31, including in-line components, constructed of high-deformability materials, with joints made by threading, bonding, compression couplings, or grooved couplings",2.5,4.5,2
+-Special access floors (designed in accordance with 13.5.7.2),1,2.5,2,,"-Piping and tubing constructed of low-deformability materials, such as cast iron, glass, and nonductile plastics",2.5,3,2
+-All others,1,1.5,1.5,,"-Ductwork, including in-line components, constructed of high-deformability materials, with joints made by welding or brazing",2.5,9,2
+Appendages and ornamentations,2.5,2.5,2,,"-Ductwork, including in-line components, constructed of high-deformability materials, with joints made by means other than welding or brazing",2.5,6,2
+Signs and Billboards,2.5,3,2,,"-Ductwork, including in-line components, constructed of low-deformability materials, such as cast iron, glass, and nonductile plastics",2.5,3,2
+OTHER RIGID COMPONENTS,-,-,-,,-Electrical conduit and cable trays,2.5,6,2
+-High-deformability elements and attachments,1,3.5,2,,-Bus ducts,1,2.5,2
+-Limited deformability elements and attachments,1,2.5,2,,-Plumbing,1,2.5,2
+-Low-deformability materials and attachments,1,1.5,1.5,,-Pneumatic tube transport systems,2.5,6,2
 OTHER FLEXIBLE COMPONENTS,-,-,-,,,,,
 -High-deformability elements and attachments,2.5,3.5,2.5,,,,,
 -Limited deformability elements and attachments,2.5,2.5,2.5,,,,,
