@@ -1,8 +1,8 @@
-Architectural Components,Ap,Rp,?0,,Mechanical and Electrical Components,Ap,Rp,?0
+﻿Architectural Components,Ap,Rp,Omega-Not,,Mechanical and Electrical Components,Ap,Rp,Omega-Not
 INTERIOR NONSTRUCTURAL WALLS AND PARTITIONS,,,,,MECHANICAL AND ELECTRICAL COMPONENTS,,,
 -Plain (unreinforced masonry walls),1,1.5,1.5,,"-Air-side HVACR, fans, Air handlers, Air conditions units, cabinet heaters, Air distribution boxes, and other mechanical components constructed of sheet metal framing",2.5,6,2
 -All other walls and partitions,1,2.5,2,,"-Wet-side HVACR, boilers, furnaces, atmospheric tanks and bins, chillers, water heaters, heat exchangers, evaporators, air separators, manufacturing or processing equipment, and other mechanical components constructed of high-deformability materials",1,2.5,2
-Cantilever Elements (unbraced or braced to structural frame below its center of mass),,,,,"-Air coolers (fin fans), air-cooled heat exchangers, condensing units, dry coolers, remote radiators and other mechanical components elevated on integral structural steel or sheet metal supports",2.5,3,1.5
+CANTILEVER ELEMENTS (UNBRACED OR BRACED TO STRUCTURAL FRAME BELOW ITS CENTER OF MASS),,,,,"-Air coolers (fin fans), air-cooled heat exchangers, condensing units, dry coolers, remote radiators and other mechanical components elevated on integral structural steel or sheet metal supports",2.5,3,1.5
 -Parapets and cantilever interior nonstructural walls,2.5,2.5,2,,"-Engines, turbines, pumps, compressors, and pressure vessels not supported on skirts and not within the scope of Chapter 15",1,2.5,2
 -Chimneys where laterally braced or supported by the structural frame,2.5,2.5,2,,-Skirt-supported pressure vessels not within the scope of Chapter 15,2.5,2.5,2
 CANTILEVER ELEMENTS (BRACED TO STRUCTURAL FRAME ABOVE ITS CENTER OF MASS),,,,,-Elevator and Escalator Components,1,2.5,2
