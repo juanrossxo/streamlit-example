@@ -35,4 +35,5 @@ else:
   select_df = df_asce_arch.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 ap = select_df['Ap']
 ap_print = st.latex('A_p')
-select_df.setindex(select_equip)
+equip = str(select_equp)
+select_df.setindex(equip)
