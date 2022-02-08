@@ -35,4 +35,4 @@ else:
   select_df = df_asce_mep.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 ap = select_df['Ap']
 ap_print = st.latex('A_p')
-select_duf
+select_df
