@@ -18,10 +18,10 @@ equip_sel = pd.DataFrame(equip)
 # df for equipment types
 file = 'https://raw.githubusercontent.com/juanrossxo/streamlit-example/master/Seismic%20Anchorage.csv'
 df_asce_arch = pd.read_csv(file, usecols =[0,1,2,3])
-df_asce_arch.set_index('Architectural Components')
+#df_asce_arch.set_index('Architectural Components')
 df_asce_mep = pd.read_csv(file, usecols =[5,6,7,8])
 df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].notna()]
-df_asce_mep.set_index('Mechanical and Electrical Components')
+#df_asce_mep.set_index('Mechanical and Electrical Components')
 
 #now create a drop down based on which component, etc.
 select_equip = st.selectbox('Equipment Type', equip_sel)
