@@ -31,11 +31,11 @@ df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].no
 select_equip = st.selectbox('Equipment Type', equip_sel)
 #if statement for types of equipment
 if select_equip = 'Architectural':
-  mep_select = st.selectbox('Equipment Subtype', df_asce_arch)
-  select_df = df_asce_arch.loc[df_asce_arch['Architectural Components'] == mep_select]
+  select = st.selectbox('Equipment Subtype', df_asce_arch)
+  select_df = df_asce_arch.loc[df_asce_arch['Architectural Components'] == select]
 else:
   select_equip = 'Mechanical and Electrical'
-  arch_select = st.selectbox('Equipment Subtype, df_asce_mep)
-  select_df = df_asce_arch.loc[df_asce_mep['Mechanical and Electrical Components'] == mep_select]
+  select = st.selectbox('Equipment Subtype, df_asce_mep)
+  select_df = df_asce_arch.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 ap = select_df['Ap']
 st.latex('A_p' = ap) 
