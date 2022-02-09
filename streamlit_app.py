@@ -51,7 +51,7 @@ else:
   rp = select_df['Rp.1'].values[0]
   o0 = select_df['Omega-Not.1'].values[0]
 #not quite done here.. how to display values nicely in latek with values inserted??
-@handcalc(params)
+@handcalc()
 def my_calc1():
   A_p = ap
   R_p = rp
