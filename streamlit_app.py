@@ -36,9 +36,9 @@ except:
   ap = select_df['Ap.1'].values[0]
 select_df
 #not quite done here.. how to display values nicely in latek with values inserted??
-
+ap
 #checkbox for anchorage to concrete
 overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
 if overstrength_true:
-  st.write('A value of \u03A90 = ' + ap + ' will be used for anchorage') 
+  #st.write('A value of \u03A90 = ' + ap + ' will be used for anchorage') 
 
