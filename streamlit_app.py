@@ -105,6 +105,12 @@ with st.expander('Fp Calculations',expanded=True):
   st.write('but also not required to be taken greater than:')
   @handcalc()
   def Fp_calc():
-    F_p_3 = 1.6*Sds*Ip*W
+    F_p_3 = 1.6*Sds*Ip*W #Kips
   latex_code4, vals_dict = Fp_calc()
   st.latex(latex_code4)
+  
+  st.write('Therefore, Fp is:')
+  def Fp_final_calc():
+    F_p_final = min(max(F_p_1, F_p_2), F_p_3)
+  latex_code5, vals_dict = Fp_final_calc()
+  st.latex(latex_code5)
