@@ -89,18 +89,22 @@ if z==0 or h==0 or rp==0 or Ip==0:
   test = False
   st.error('Please Input All Parameters')
 
-st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
-@handcalc()
-def Fp1_calc():
-  F_p = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)) #Kips
-latex_code2, vals_dict = Fp1_calc()
-st.latex(latex_code2)
-st.write('but not less than:')
-st.latex(r'''F_p = 0.3 S_{DS} I_p W_p''')
-st.write('but also not required to be taken greater than:')
-st.latex(r'''F_p = 1.6 S_{DS} I_p W_p''')
-@handcalc()
-def Fp_calc():
-   F_p = 0.3*Sds*Ip*W
-latex_code3, vals_dict = Fp_calc()
-st.latex(latex_code3)
+#Fp calcs
+with st.expander('Fp Calculations',expanded=True):
+  st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
+  @handcalc()
+  def Fp1_calc():
+    F_p_1 = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)) #Kips
+  latex_code2, vals_dict = Fp1_calc()
+  st.latex(latex_code2)
+  st.write('but not less than:')
+  def Fp2_calc():
+    F_p_2 = (0.3*Sds*Ip*W) #Kips
+  latex_code3, vals_dict = Fp1_calc()
+  st.latex(latex_code3)
+  st.write('but also not required to be taken greater than:')
+  @handcalc()
+  def Fp_calc():
+    F_p_3 = 0.3*Sds*Ip*W
+  latex_code4, vals_dict = Fp_calc()
+  st.latex(latex_code4)
