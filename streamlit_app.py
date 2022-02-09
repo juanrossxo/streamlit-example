@@ -12,7 +12,7 @@ st.title(sub_title + " Anchorage Calculation")
 Sds = st.number_input("Sds Value")
 Ip = [1.0,1.5]
 Ip1 = pd.DataFrame(Ip)
-Ip = st.selectbox('Importance Factor per ASCE7-16 13.1.3", Ip1)
+Ip = st.selectbox('Importance Factor per ASCE7-16 13.1.3', Ip1)
 
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
