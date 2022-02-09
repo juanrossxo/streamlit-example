@@ -24,14 +24,14 @@ df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].no
 #df_asce_mep.set_index('Mechanical and Electrical Components')
 
 #now create a drop down based on which component, etc.
-select_equip = st.selectbox('Equipment Type', equip_sel)
+select_equip = st.selectbox('Equipment Type', equip_sel, disabled=True)
 #if statement for types of equipment
 if select_equip == 'Architectural':
-  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.5-1)', df_asce_arch)
+  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.5-1)', df_asce_arch, disabled=True)
   select_df = df_asce_arch.loc[df_asce_arch['Architectural Components'] == select]
 else:
   select_equip == 'Mechanical and Electrical'
-  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep)
+  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep, disabled=True)
   select_df = df_asce_mep.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 try:
   ap = select_df['Ap']
@@ -39,3 +39,8 @@ try:
 except:
   ap = select_df['Ap.1']
 select_df
+#not quite done here.. how to display values nicely in latek with values inserted??
+
+#checkbox for anchorage to concrete
+overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength))
+
