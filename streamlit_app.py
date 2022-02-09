@@ -55,3 +55,4 @@ def my_calc(p: float,q: float):
     d = p*q
     return locals()
 locals()
+st.write(d)
