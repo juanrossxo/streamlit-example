@@ -112,7 +112,8 @@ with st.expander('Fp Calculations',expanded=True):
     return(locals)
   latex_code4, vals_dict= Fp3_calc()
   st.latex(latex_code4)
-  Fp3_calc()
+  vals = Fp3_calc(F_p_3)
+  st.write(vals)
   
   
   st.write('Therefore, Fp is:')
