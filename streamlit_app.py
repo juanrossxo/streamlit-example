@@ -5,10 +5,6 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
-"""
-
-In the meantime, below is an example of what you can do with just a few lines of code:
-"""
 sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
