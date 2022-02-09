@@ -48,3 +48,4 @@ overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength
 if overstrength_true:
   ovr = "A value of \u03A90 = %d will be used for anchorage" % (o0) 
   st.write(ovr)
+st.latex("F_p = ((0.4 * a_p * S_DS * W_p) / (R_p/I_p)) * (1 +  2* (z/h)
