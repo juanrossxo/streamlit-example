@@ -112,5 +112,5 @@ with st.expander('Fp Calculations',expanded=True):
   st.write('Therefore, Fp is:')
   def Fp_final_calc():
     F_p_final = max(F_p_1, F_p_2)
-  latex_code5, vals_dict = Fp_final()
+  latex_code5, vals_dict = Fp_final_calc()
   st.latex(latex_code5)
