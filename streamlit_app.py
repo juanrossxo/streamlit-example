@@ -44,8 +44,7 @@ except:
   rp = select_df['Rp.1'].values[0]
   o0 = select_df['Omega-Not.1'].values[0]
 #not quite done here.. how to display values nicely in latek with values inserted??
-st.write('Ap = %d' % (ap))
-st.write('Rp = %d' % (rp))
+select_df
 #checkbox for anchorage to concrete
 overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
 if overstrength_true:
