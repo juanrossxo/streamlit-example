@@ -55,4 +55,4 @@ def my_calc(p: float,q: float):
     d = p*q
     return locals()
 t = my_calc(2,6)
-st.latex(t)
+t
