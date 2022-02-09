@@ -57,3 +57,4 @@ def my_calc(x:float, y: float, z: float):
   b = 3*a/z + sqrt(a + y/2)
   c = a + b
 latex_code, vals_dict = my_calc(2.3, 3.2 , 1.2)
+st.latex(latex_code)
