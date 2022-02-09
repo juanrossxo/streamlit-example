@@ -92,5 +92,5 @@ st.latex(r'''F_p = 1.6 S_{DS} I_p W_p''')
 @handcalc()
 def Fp_calc():
    F_p #not taken less than = 0.3*Sds*Ip*W 
-latex_code, vals_dict = my_calc()
+latex_code, vals_dict = Fp_calc()
 st.latex(latex_code)
