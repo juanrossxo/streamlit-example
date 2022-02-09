@@ -34,12 +34,11 @@ try:
   ap_print = st.latex('A_p')
 except:
   ap = select_df['Ap.1']
-ap1 = str(ap)
 select_df
 #not quite done here.. how to display values nicely in latek with values inserted??
 
 #checkbox for anchorage to concrete
 overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
 if overstrength_true:
-  st.write('A value of \u03A90 = ' + ap1 + ' will be used for anchorage') 
+  st.write('A value of \u03A90 = ' + ap + ' will be used for anchorage') 
 
