@@ -23,6 +23,7 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
   height = st.number_input("Height of Equipment, H (ft.)", format='%g')
   COG = 0.5*height
   COG_other = st.checkbox('Check to input other COG height',help='Default COG of unit used is 50% ht.')
+  st.caption('Default COG of unit used is 50% ht.')
   if COG_other == True:
     COG = st.number_input("COG ht. (ft)", format='%g')
 #set up df for subsections of equipment
