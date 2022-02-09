@@ -91,6 +91,6 @@ st.write('but also not required to be taken greater than:')
 st.latex(r'''F_p = 1.6 S_{DS} I_p W_p''')
 @handcalc()
 def my_calc(x:float, y: float, z: float):
-   F_p = min{ 2*x , 3*a/z + sqrt(a + y/2), z*2)
+   F_p = min{ 2*x , 3*a/z + sqrt(a + y/2), z*2}
 latex_code, vals_dict = my_calc(2.3, 3.2 , 1.2)
 st.latex(latex_code)
