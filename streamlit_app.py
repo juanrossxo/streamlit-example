@@ -39,5 +39,5 @@ select_df
 ap
 #checkbox for anchorage to concrete
 overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
-if overstrength_true:
+#if overstrength_true:
   #st.write('A value of \u03A90 = ' + ap + ' will be used for anchorage') 
