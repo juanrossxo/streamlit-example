@@ -30,10 +30,10 @@ else:
   select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep, disabled=True)
   select_df = df_asce_mep.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
 try:
-  ap = select_df['Ap']
+  ap = select_df['Ap'].values[0]
   ap_print = st.latex('A_p')
 except:
-  ap = select_df['Ap.1']
+  ap = select_df['Ap.1'].values[0]
 select_df
 #not quite done here.. how to display values nicely in latek with values inserted??
 
