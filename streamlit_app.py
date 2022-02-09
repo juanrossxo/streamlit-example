@@ -54,4 +54,4 @@ st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 def my_calc(p: float,q: float):
     d = p*q
     return locals()
-st.latex(my_calc(4,6))
+st.latex(my_calc())
