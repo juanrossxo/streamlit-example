@@ -86,10 +86,10 @@ if overstrength_true:
   st.latex(latex_code1)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 @handcalc()
-def Fp_calc():
+def Fp1_calc():
   F_p = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)
-latex_code, vals_dict = Fp_calc()
-st.latex(latex_code)
+latex_code1, vals_dict = Fp1_calc()
+st.latex(latex_code1)
 st.write('but not less than:')
 st.latex(r'''F_p = 0.3 S_{DS} I_p W_p''')
 st.write('but also not required to be taken greater than:')
