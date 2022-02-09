@@ -1,3 +1,4 @@
+from handcalcs.decorator import handcalc
 from handcalcs import handcalc
 import math
 import pandas as pd
@@ -50,6 +51,7 @@ if overstrength_true:
   st.write(ovr)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 @handcalc(jupyter_display = True)
-def my_calc(ap,rp):
-    d = rp*ap
+def my_calc(p,q):
+    d = p*q
     return locals()
+vals = my_calc(ap,rp)
