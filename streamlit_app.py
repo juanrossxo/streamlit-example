@@ -116,11 +116,11 @@ with st.expander('Fp Calculations',expanded=True):
   
   
   st.write('Therefore, Fp is:')
-  Fp1 = (0.4*ap*Sds*W)/(rp/Ip)
+  Fp1 = (0.4*ap*Sds*W)/(rp/Ip)*(1+2*(z/h))
   Fp2 = (0.3*Sds*Ip*W)
   Fp3 = 1.6*Sds*Ip*W
   @handcalc()
   def Fp_final_calc():
-    F_p_final = min(max(Fp1, Fp2), Fp3)
+    F_p_final = min(max(Fp1, Fp2), Fp3) #Kips
   latex_code5, vals_dict = Fp_final_calc()
   st.latex(latex_code5)
