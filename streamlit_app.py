@@ -55,14 +55,16 @@ else:
 def my_calc1():
   A_p = ap
   R_p = rp
-  Omega_0 = o0
 latex_code, vals_dict = my_calc1()
 st.latex(latex_code)
 #checkbox for anchorage to concrete
 overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
 if overstrength_true:
-  ovr = "A value of \u03A90 = %d will be used for anchorage" % (o0) 
-  st.write(ovr)
+  @handcalc()
+  def my_calc2():
+    Omega_0 = o0
+  latex_code1 = my_calc2()
+  st.latex(latex_code1)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 st.write('but not less than:')
 st.latex(r'''F_p = 0.3 S_{DS} I_p W_p''')
