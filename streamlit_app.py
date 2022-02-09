@@ -90,7 +90,7 @@ st.latex(r'''F_p = 0.3 S_{DS} I_p W_p''')
 st.write('but also not required to be taken greater than:')
 st.latex(r'''F_p = 1.6 S_{DS} I_p W_p''')
 @handcalc()
-def my_calc(x:float, y: float, z: float):
-   F_p = min((mycalc1 , 3*z, z*2))
-latex_code, vals_dict = my_calc(2.3, 3.2 , 1.2)
+def Fp_calc():
+   F_p #not taken less than = 0.3*Sds*Ip*W 
+latex_code, vals_dict = my_calc()
 st.latex(latex_code)
