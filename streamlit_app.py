@@ -9,14 +9,18 @@ import numpy as np
 sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
-#SDS value + importance + wt.
-Sds = st.number_input("Sds Value", format='%g')
-Ip = [1.0,1.5]
-Ip1 = pd.DataFrame(Ip)
-Ip = st.selectbox('Importance Factor, Ip (ASCE7-16 13.1.3)', Ip1)
-W = st.number_input("Weight of the Equipment, Wp (kips)", format='%g')
-z = st.number_input("Elevation of the Equipment, z (ft.)", format='%g')
-h = st.number_input("Height of Building, h (ft.)", format='%g')
+#Typ. Parameters to Input
+with st.expander('Seismic and Equipment Parameters',expanded=True)
+  Sds = st.number_input("Sds Value", format='%g')
+  Ip = [1.0,1.5]
+  Ip1 = pd.DataFrame(Ip)
+  Ip = st.selectbox('Importance Factor, Ip (ASCE7-16 13.1.3)', Ip1)
+  W = st.number_input("Weight of the Equipment, Wp (kips)", format='%g')
+  z = st.number_input("Elevation of the Equipment, z (ft.)", format='%g')
+  h = st.number_input("Height of Building, h (ft.)", format='%g')
+  length = st.number_input("Length of Equipment (long side), L (ft.)", format='%g')
+  width = st.number_input("Width of Equipment (short side), W (ft.)", format='%g')
+  height = st.number_input("Height of Equipment, H (ft.), format'%g')
 
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
