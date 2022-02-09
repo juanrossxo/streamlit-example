@@ -42,5 +42,5 @@ select_df
 #not quite done here.. how to display values nicely in latek with values inserted??
 
 #checkbox for anchorage to concrete
-overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A9 0)')
+overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
 
