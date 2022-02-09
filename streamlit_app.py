@@ -55,7 +55,7 @@ else:
 def my_calc1():
   A_p = ap
   R_p = rp
-  \u03A90 = o0
+  \u03A9_0 = o0
 latex_code, vals_dict = my_calc1()
 st.latex(latex_code)
 #checkbox for anchorage to concrete
