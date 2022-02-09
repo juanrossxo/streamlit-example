@@ -63,7 +63,7 @@ if overstrength_true:
   @handcalc()
   def my_calc2():
     Omega_0 = o0
-  latex_code1 = my_calc2()
+  latex_code1, vals_dict = my_calc2()
   st.latex(latex_code1)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 st.write('but not less than:')
