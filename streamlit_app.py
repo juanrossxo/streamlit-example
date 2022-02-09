@@ -25,7 +25,6 @@ df_asce_arch = pd.read_csv(file, usecols =[0,1,2,3])
 #df_asce_arch.set_index('Architectural Components')
 df_asce_mep = pd.read_csv(file, usecols =[5,6,7,8])
 df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].notna()]
-#df_asce_mep.set_index('Mechanical and Electrical Components')
 
 #now create a drop down based on which component, etc.
 if W > 100:
@@ -44,7 +43,6 @@ if select_equip == 'Architectural':
   rp = select_df['Rp'].values[0]
   o0 = select_df['Omega-Not'].values[0]
 else:
-  select_equip == 'Mechanical and Electrical'
   select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep, disabled=b)
   select_df = df_asce_mep.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
   ap = select_df['Ap.1'].values[0]
