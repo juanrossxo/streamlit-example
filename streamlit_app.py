@@ -33,6 +33,9 @@ else:
   select_equip == 'Mechanical and Electrical'
   select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep)
   select_df = df_asce_mep.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
-ap = select_df['Ap']
-ap_print = st.latex('A_p')
+try:
+  ap = select_df['Ap']
+  ap_print = st.latex('A_p')
+except:
+  ap = select_df['Ap.1']
 select_df
