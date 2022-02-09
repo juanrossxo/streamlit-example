@@ -20,7 +20,7 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
   h = st.number_input("Height of Building, h (ft.)", format='%g')
   length = st.number_input("Length of Equipment (long side), L (ft.)", format='%g')
   width = st.number_input("Width of Equipment (short side), W (ft.)", format='%g')
-  height = st.number_input("Height of Equipment, H (ft.)", format'%g')
+  height = st.number_input("Height of Equipment, H (ft.)", format='%g')
 
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
