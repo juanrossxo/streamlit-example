@@ -1,6 +1,7 @@
 from handcalcs.decorator import handcalc
 from handcalcs import handcalc
 import math
+from math import sqrt
 import pandas as pd
 import streamlit as st
 import numpy as np
@@ -50,8 +51,9 @@ if overstrength_true:
   ovr = "A value of \u03A90 = %d will be used for anchorage" % (o0) 
   st.write(ovr)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
-@handcalc(jupyter_display = False)
-def my_calc(p: float,q: float):
-    d = p*q/p
-my_calc(2,6)
-#st.latex(t)
+@handcalc()
+def my_calc(x:float, y: float, z: float):
+  a = 2*x
+  b = 3*a/z + sqrt(a + y/2)
+  c = a + b
+latex_code, vals_dict = my_calc(2.3, 3.2 , 1.2)
