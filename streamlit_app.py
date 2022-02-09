@@ -101,7 +101,6 @@ with st.expander('Fp Calculations',expanded=True):
   @handcalc()
   def Fp2_calc(F_p_2: float):
     F_p_2 = 0.3*Sds*Ip*W #Kips
-    return(locals)
   latex_code3, vals_dict = Fp2_calc()
   st.latex(latex_code3)
   
@@ -109,12 +108,9 @@ with st.expander('Fp Calculations',expanded=True):
   @handcalc()
   def Fp3_calc():
     F_p_3 = 1.6*Sds*Ip*W #Kips
-    return(locals)
   latex_code4, vals_dict= Fp3_calc()
   st.latex(latex_code4)
 
-  
-  
   st.write('Therefore, Fp is:')
   F_p_1 = (0.4*ap*Sds*W)/(rp/Ip)*(1+2*(z/h))
   F_p_2 = (0.3*Sds*Ip*W)
