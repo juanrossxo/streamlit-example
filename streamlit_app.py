@@ -33,6 +33,8 @@ if W > 100:
   b = True
   if st.checkbox==True:
     b = False
+else:
+  b = False
 select_equip = st.selectbox('Equipment Type', equip_sel, disabled=b)
 #if statement for types of equipment
 if select_equip == 'Architectural':
