@@ -1,4 +1,5 @@
 from handcalcs import handcalc
+import handcalcs.render
 import math
 import pandas as pd
 import streamlit as st
