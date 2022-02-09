@@ -28,13 +28,13 @@ df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].no
 #df_asce_mep.set_index('Mechanical and Electrical Components')
 
 #now create a drop down based on which component, etc.
-b = false
+b = False
 select_equip = st.selectbox('Equipment Type', equip_sel, disabled=b)
 if W > 100:
   st.checkbox('Are you sure that your units are correct? *KIPS*')
-  b = true
-  if st.checkbox==true:
-    b = false
+  b = True
+  if st.checkbox==True:
+    b = False
 #if statement for types of equipment
 if select_equip == 'Architectural':
   select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.5-1)', df_asce_arch)
