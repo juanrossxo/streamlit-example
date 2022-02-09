@@ -112,13 +112,15 @@ with st.expander('Fp Calculations',expanded=True):
     return(locals)
   latex_code4, vals_dict= Fp3_calc()
   st.latex(latex_code4)
-  vals = Fp3_calc(F_p_3)
-  st.write(vals)
+
   
   
   st.write('Therefore, Fp is:')
-  #@handcalc()
-  #def Fp_final_calc():
-    #F_p_final = max(F_p_2, F_p_3)
-  #latex_code5, vals_dict = Fp_final_calc()
-  #st.latex(latex_code5)
+  Fp1 = (0.4*ap*Sds*W)/(rp/Ip)
+  Fp2 = (0.3*Sds*Ip*W)
+  Fp3 = 1.6*Sds*Ip*W
+  @handcalc()
+  def Fp_final_calc():
+    F_p_final = min(max(Fp1, Fp2), Fp3)
+  latex_code5, vals_dict = Fp_final_calc()
+  st.latex(latex_code5)
