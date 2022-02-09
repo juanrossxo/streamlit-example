@@ -8,11 +8,12 @@ import numpy as np
 sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
-#SDS value + importance
+#SDS value + importance + wt.
 Sds = st.number_input("Sds Value", format='%g')
 Ip = [1.0,1.5]
 Ip1 = pd.DataFrame(Ip)
 Ip = st.selectbox('Importance Factor per ASCE7-16 13.1.3', Ip1)
+W = st.number_input("Weight of the Equipment in Kips", format='%g')
 
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
