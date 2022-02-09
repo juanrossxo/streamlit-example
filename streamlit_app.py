@@ -37,8 +37,8 @@ except:
   ap = select_df['Ap.1'].values[0]
   rp = select_df['Rp.1'].values[0]
   o0 = select_df['Omega-Not.1'].values[0]
-select_df.round(decimals=1)
-select_df
+s1 = select_df.round(decimals=1)
+s1
 #not quite done here.. how to display values nicely in latek with values inserted??
 
 #checkbox for anchorage to concrete
