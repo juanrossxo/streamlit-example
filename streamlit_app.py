@@ -51,7 +51,13 @@ else:
   rp = select_df['Rp.1'].values[0]
   o0 = select_df['Omega-Not.1'].values[0]
 #not quite done here.. how to display values nicely in latek with values inserted??
-select_df
+@handcalc()
+def my_calc1():
+  A_p = ap
+  R_p = rp
+  \u03A90 = o0
+latex_code, vals_dict = my_calc1()
+st.latex(latex_code)
 #checkbox for anchorage to concrete
 overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
 if overstrength_true:
