@@ -1,5 +1,5 @@
 from handcalcs import handcalc
-import handcalcs.render
+from handcalcs.decorator import handcalc
 import math
 import pandas as pd
 import streamlit as st
@@ -50,6 +50,8 @@ if overstrength_true:
   ovr = "A value of \u03A90 = %d will be used for anchorage" % (o0) 
   st.write(ovr)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
-%%render
-a = 1
-
+@handcalc(jupyter_display = True)
+def some_cal(a,b):
+    d = sqrt(a) + sin(b) + pi + sqrt(a)  # this is d
+    e = sin(b) + pi + sqrt(a) + sin(b) + pi # this is e
+    return locals()
