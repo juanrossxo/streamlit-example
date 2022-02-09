@@ -21,11 +21,19 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
   length = st.number_input("Length of Equipment (long side), L (ft.)", format='%g')
   width = st.number_input("Width of Equipment (short side), W (ft.)", format='%g')
   height = st.number_input("Height of Equipment, H (ft.)", format='%g')
+  #COG
   COG = 0.5*height
   COG_other = st.checkbox('Check to input other COG height',help='Default C.O.G. of unit used is 50% ht.')
   st.caption('Default C.O.G. of unit used is 50% ht.')
   if COG_other == True:
     COG = st.number_input("C.O.G. ht. (ft)", format='%g')
+  #anchor points inset?
+  ap_inset = st.checkbox('Are the anchor points offset inside or outside of the unit?')
+  if ap_inset == True:
+    ap_off = st.number_input("Enter Offset: + for outside of unit, - for inset, (in.)", format='%g')
+    #convert to feet
+    ap_off = ap_off/12
+  
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
 equip_sel = pd.DataFrame(equip)
