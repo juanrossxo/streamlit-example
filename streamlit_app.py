@@ -31,9 +31,9 @@ df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].no
 select_equip = st.selectbox('Equipment Type', equip_sel)
 if W > 1000:
   st.checkbox('Are you sure that your units are correct? KIPS')
-  select_equip(disabled=true)
+  select_equip(disabled='true')
   if st.checkbox==true:
-    select_equip(disabled=false)
+    select_equip(disabled='false')
 #if statement for types of equipment
 if select_equip == 'Architectural':
   select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.5-1)', df_asce_arch)
