@@ -63,7 +63,7 @@ if overstrength_true:
   st.write(ovr)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))     (13.3-1)''')
 st.write('but not less than:'
-st.latex(r'''F_p = 0.3 S_{DS} W_p     (13.3-2)''')
+st.latex(r'F_p = 0.3 S_{DS} W_p     (13.3-2)')
 @handcalc()
 def my_calc(x:float, y: float, z: float):
   a = 2*x
