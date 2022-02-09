@@ -53,5 +53,6 @@ st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 @handcalc(jupyter_display = True)
 def my_calc(p: float,q: float):
     d = p*q/p
-t = my_calc(2,6)
-st.latex(t)
+    st.latex(locals())
+my_calc(2,6)
+#st.latex(t)
