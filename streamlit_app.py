@@ -40,5 +40,5 @@ ap
 #checkbox for anchorage to concrete
 overstrength_true = st.checkbox('Anchorage to Concrete or Masonry? (Overstrength \u03A90)')
 if overstrength_true:
-  ovr = "A value of \u03A90 = %ap will be used for anchorage" % (ap) 
+  ovr = "A value of \u03A90 = %d will be used for anchorage" % (ap) 
   st.write(ovr)
