@@ -91,7 +91,6 @@ if z==0 or h==0 or rp==0 or Ip==0:
 
 #Fp calcs
 with st.expander('Fp Calculations',expanded=True):
-  st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
   @handcalc()
   def Fp1_calc():
     F_p_1 = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)) #Kips
@@ -104,6 +103,7 @@ with st.expander('Fp Calculations',expanded=True):
     F_p_2 = (0.3*Sds*Ip*W) #Kips
   latex_code3, vals_dict = Fp2_calc()
   st.latex(latex_code3)
+  
   st.write('but also not required to be taken greater than:')
   @handcalc()
   def Fp3_calc():
@@ -112,6 +112,7 @@ with st.expander('Fp Calculations',expanded=True):
   st.latex(latex_code4)
   
   st.write('Therefore, Fp is:')
+  @handcalc()
   def Fp_final_calc():
     F_p_final = max(F_p_1, F_p_2)
   latex_code5, vals_dict = Fp_final_calc()
