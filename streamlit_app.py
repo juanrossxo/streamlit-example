@@ -15,6 +15,8 @@ Ip = [1.0,1.5]
 Ip1 = pd.DataFrame(Ip)
 Ip = st.selectbox('Importance Factor per ASCE7-16 13.1.3', Ip1)
 W = st.number_input("Weight of the Equipment in Kips", format='%g')
+if W > 1000:
+  st.caption('Are you sure that your units are correct? KIPS')
 
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
