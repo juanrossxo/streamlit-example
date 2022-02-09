@@ -8,6 +8,12 @@ import numpy as np
 sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
+#SDS value + importance
+Sds = st.number_input("Sds Value")
+Ip = [1.0,1.5]
+Ip1 = pd.DataFrame(Ip)
+Ip = st.selectbox('Importance Factor per ASCE7-16 13.1.3", Ip1)
+
 #set up df for subsections of equipment
 equip = ['Architectural', 'Mechanical and Electrical']
 equip_sel = pd.DataFrame(equip)
@@ -37,8 +43,6 @@ except:
   ap = select_df['Ap.1'].values[0]
   rp = select_df['Rp.1'].values[0]
   o0 = select_df['Omega-Not.1'].values[0]
-s1 = select_df.round(decimals=1)
-s1
 #not quite done here.. how to display values nicely in latek with values inserted??
 
 #checkbox for anchorage to concrete
