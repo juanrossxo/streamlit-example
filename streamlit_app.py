@@ -85,6 +85,7 @@ if overstrength_true:
   latex_code1, vals_dict = my_calc2()
   st.latex(latex_code1)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
+@handcalc()
 def Fp_calc():
   F_p = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)
 latex_code, vals_dict = Fp_calc()
