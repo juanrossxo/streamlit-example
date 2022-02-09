@@ -9,7 +9,7 @@ sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
 #SDS value + importance
-Sds = st.number_input("Sds Value",value=0.0001,step=0.001, min_value=0.001)
+Sds = st.number_input("Sds Value",value=0.0001,step=0.0001, min_value=0.0001)
 Ip = [1.0,1.5]
 Ip1 = pd.DataFrame(Ip)
 Ip = st.selectbox('Importance Factor per ASCE7-16 13.1.3', Ip1)
