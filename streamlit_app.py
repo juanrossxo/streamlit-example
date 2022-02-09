@@ -85,12 +85,10 @@ if overstrength_true:
   latex_code1, vals_dict = my_calc2()
   st.latex(latex_code1)
 
-if rp==0 or Ip==0:
+if rp==0 or h==0 or Ip==0:
   test = False
   st.error('Please Input All Parameters')
-if z==0 and h==0:
-  z = 1
-  h = 1
+
 #Fp calcs
 with st.expander('Fp Calculations',expanded=True):
   @handcalc()
