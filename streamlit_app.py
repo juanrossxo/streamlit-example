@@ -26,6 +26,8 @@ df_asce_arch = pd.read_csv(file, usecols =[0,1,2,3])
 df_asce_mep = pd.read_csv(file, usecols =[5,6,7,8])
 df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].notna()]
 
+st.sidebar.write('test')
+
 #now create a drop down based on which component, etc.
 if W > 100:
   wq = st.checkbox('Are you sure that your units are correct? *KIPS*')
