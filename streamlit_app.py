@@ -87,7 +87,7 @@ if overstrength_true:
 
 if z==0 or h==0 or rp==0 or Ip==0:
   test = False
-  st.error('Please Input All Parameters)
+  st.error('Please Input All Parameters')
 
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 @handcalc()
