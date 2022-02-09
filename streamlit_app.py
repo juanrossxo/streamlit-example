@@ -29,9 +29,9 @@ df_asce_mep = df_asce_mep[df_asce_mep['Mechanical and Electrical Components'].no
 
 #now create a drop down based on which component, etc.
 if W > 100:
-  st.checkbox('Are you sure that your units are correct? *KIPS*')
+  wq = st.checkbox('Are you sure that your units are correct? *KIPS*')
   b = True
-  if st.checkbox==True:
+  if wq==True:
     b = False
 else:
   b = False
