@@ -14,7 +14,7 @@ Sds = st.number_input("Sds Value", format='%g')
 Ip = [1.0,1.5]
 Ip1 = pd.DataFrame(Ip)
 Ip = st.selectbox('Importance Factor per ASCE7-16 13.1.3', Ip1)
-W = st.number_input("Weight of the Equipment in Kips", format='%g')
+W = st.number_input("Weight of the Equipment, Wp (kips)", format='%g')
 z = st.number_input("Elevation of the Equipment, z (ft.)", format='%g')
 h = st.number_input("Height of Building, h (ft.)", format='%g')
 
