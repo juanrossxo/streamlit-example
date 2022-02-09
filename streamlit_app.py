@@ -99,7 +99,7 @@ with st.expander('Fp Calculations',expanded=True):
   
   st.write('but not less than:')
   @handcalc()
-  def Fp2_calc(F_p_2: float):
+  def Fp2_calc():
     F_p_2 = 0.3*Sds*Ip*W #Kips
   latex_code3, vals_dict = Fp2_calc()
   st.latex(latex_code3)
