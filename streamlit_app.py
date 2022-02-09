@@ -36,14 +36,14 @@ if W > 100:
 select_equip = st.selectbox('Equipment Type', equip_sel, disabled=b)
 #if statement for types of equipment
 if select_equip == 'Architectural':
-  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.5-1)', df_asce_arch)
+  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.5-1)', df_asce_arch, disabled=b)
   select_df = df_asce_arch.loc[df_asce_arch['Architectural Components'] == select]
   ap = select_df['Ap'].values[0]
   rp = select_df['Rp'].values[0]
   o0 = select_df['Omega-Not'].values[0]
 else:
   select_equip == 'Mechanical and Electrical'
-  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep)
+  select = st.selectbox('Equipment Subtype (ASCE 7-16, Table 13.6-1)', df_asce_mep, disabled=b)
   select_df = df_asce_mep.loc[df_asce_mep['Mechanical and Electrical Components'] == select]
   ap = select_df['Ap.1'].values[0]
   rp = select_df['Rp.1'].values[0]
