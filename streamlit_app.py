@@ -1,4 +1,4 @@
-from handcalcs import handcalc
+from handcalcs import handcalc, render
 import math
 import pandas as pd
 import streamlit as st
@@ -49,4 +49,5 @@ if overstrength_true:
   ovr = "A value of \u03A90 = %d will be used for anchorage" % (o0) 
   st.write(ovr)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
-st.latex(r'''F_p = \frac{0.4 %d S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''' % (ap))
+
+
