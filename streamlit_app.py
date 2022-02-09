@@ -1,5 +1,4 @@
 from handcalcs import handcalc
-from handcalcs.decorator import handcalc
 import math
 import pandas as pd
 import streamlit as st
@@ -51,7 +50,6 @@ if overstrength_true:
   st.write(ovr)
 st.latex(r'''F_p = \frac{0.4 a_p S_{DS} W_p}{R_p/I_p} (1 +  2(\frac{z}{h}))''')
 @handcalc(jupyter_display = True)
-def some_cal(a,b):
-    d = sqrt(a) + sin(b) + pi + sqrt(a)  # this is d
-    e = sin(b) + pi + sqrt(a) + sin(b) + pi # this is e
+def my_calc(ap,rp):
+    d = rp*ap
     return locals()
