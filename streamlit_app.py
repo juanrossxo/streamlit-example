@@ -29,6 +29,7 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
     COG = st.number_input("C.O.G. ht. (ft)", format='%g')
   #anchor points inset?
   ap_inset = st.checkbox('Are the anchor points offset inside or outside of the unit?')
+  ap_off = 0
   if ap_inset == True:
     ap_off = st.number_input("Enter Offset: + for outside of unit, - for inset, (in.)", format='%g')
     #convert to feet
@@ -90,8 +91,6 @@ st.write('but also not required to be taken greater than:')
 st.latex(r'''F_p = 1.6 S_{DS} I_p W_p''')
 @handcalc()
 def my_calc(x:float, y: float, z: float):
-  a = 2*x
-  b = 3*a/z + sqrt(a + y/2)
-  c = a + b
+   F_p = min{ 2*x , 3*a/z + sqrt(a + y/2), z*2)
 latex_code, vals_dict = my_calc(2.3, 3.2 , 1.2)
 st.latex(latex_code)
