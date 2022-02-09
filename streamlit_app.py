@@ -10,7 +10,7 @@ sub_title = st.text_input("Name of Equipment")
 st.title(sub_title + " Anchorage Calculation")
 
 #Typ. Parameters to Input
-with st.expander('Seismic and Equipment Parameters',expanded=True)
+with st.expander('Seismic and Equipment Parameters',expanded=True):
   Sds = st.number_input("Sds Value", format='%g')
   Ip = [1.0,1.5]
   Ip1 = pd.DataFrame(Ip)
