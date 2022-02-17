@@ -17,7 +17,7 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
   Ip = st.selectbox('Importance Factor, Ip (ASCE7-16 13.1.3)', Ip1)
   W = st.number_input("Weight of the Equipment, Wp (kips)", format='%g')
   z = st.number_input("Elevation of the Equipment, z (ft.)", format='%g')
-  h = st.number_input("Height of Building, h (ft.)", format='%.4f')
+  h = st.number_input("Height of Building, h (ft.)", format='%g')
   length = st.number_input("Length of Equipment (long side), L (ft.)", format='%g')
   width = st.number_input("Width of Equipment (short side), W (ft.)", format='%g')
   height = st.number_input("Height of Equipment, H (ft.)", format='%g')
@@ -105,8 +105,8 @@ with st.expander('Fp Calculations',expanded=True):
   st.latex(latex_code3)
   
   st.write('but also not required to be taken greater than:')
-  @handcalc()
-  def Fp3_calc(precision: int = 3):
+  @handcalc(precision: int = 3)
+  def Fp3_calc():
     F_p_3 = 1.6*Sds*Ip*W #Kips
   latex_code4, vals_dict= Fp3_calc()
   st.latex(latex_code4)
