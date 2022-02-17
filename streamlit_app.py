@@ -108,6 +108,7 @@ with st.expander('Fp Calculations',expanded=True):
   @handcalc()
   def Fp3_calc():
     F_p_3 = 1.6*Sds*Ip*W #Kips
+    return locals()
   latex_code4, vals_dict= Fp3_calc()
   st.latex(latex_code4)
 
