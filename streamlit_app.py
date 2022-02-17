@@ -117,6 +117,6 @@ with st.expander('Fp Calculations',expanded=True):
   F_p_3 = 1.6*Sds*Ip*W
   @handcalc()
   def Fp_final_calc():
-    F_p_final = min(F_p_1, F_p_2, F_p_3) #Kips
+    F_p_final = min(max(F_p_1, F_p_2), F_p_3) #Kips
   latex_code5, vals_dict = Fp_final_calc()
   st.latex(latex_code5)
