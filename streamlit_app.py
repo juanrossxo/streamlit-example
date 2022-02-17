@@ -106,9 +106,8 @@ with st.expander('Fp Calculations',expanded=True):
   
   st.write('but also not required to be taken greater than:')
   @handcalc()
-  def Fp3_calc():
+  def Fp3_calc(precision: int = 3):
     F_p_3 = 1.6*Sds*Ip*W #Kips
-    return locals()
   latex_code4, vals_dict= Fp3_calc()
   st.latex(latex_code4)
 
