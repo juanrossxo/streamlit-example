@@ -15,7 +15,7 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
   Ip = [1.0,1.5]
   Ip1 = pd.DataFrame(Ip)
   Ip = st.selectbox('Importance Factor, Ip (ASCE7-16 13.1.3)', Ip1)
-  W = st.number_input("Weight of the Equipment, Wp (kips)", format='%g')
+  W = st.number_input("Weight of the Equipment, Wp (lb.)", format='%g')
   z = st.number_input("Elevation of the Equipment, z (ft.)", format='%g')
   h = st.number_input("Height of Building, h (ft.)", format='%g')
   length = st.number_input("Length of Equipment (long side), L (ft.)", format='%g')
@@ -93,21 +93,21 @@ if rp==0 or h==0 or Ip==0:
 with st.expander('Fp Calculations',expanded=True):
   @handcalc()
   def Fp1_calc(ap: float, Sds: float, W: float, rp: float, Ip: float, z: float, h: float):
-    F_p_1 = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)) #Kips
+    F_p_1 = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)) #Lbs.
   latex_code2, vals_dict = Fp1_calc(ap, Sds, W, rp, Ip, z, h)
   st.latex(latex_code2)
   
   st.write('but not less than:')
   @handcalc()
   def Fp2_calc():
-    F_p_2 = 0.3*Sds*Ip*W #Kips
+    F_p_2 = 0.3*Sds*Ip*W #Lbs.
   latex_code3, vals_dict = Fp2_calc()
   st.latex(latex_code3)
   
   st.write('but also not required to be taken greater than:')
   @handcalc()
   def Fp3_calc():
-    F_p_3 = 1.6*Sds*Ip*W #Kips
+    F_p_3 = 1.6*Sds*Ip*W #Lbs.
   latex_code4, vals_dict= Fp3_calc()
   st.latex(latex_code4)
 
@@ -117,6 +117,6 @@ with st.expander('Fp Calculations',expanded=True):
   F_p_3 = 1.6*Sds*Ip*W
   @handcalc()
   def Fp_final_calc():
-    F_p_final = min(max(F_p_1, F_p_2), F_p_3) #Kips
+    F_p_final = min(max(F_p_1, F_p_2), F_p_3) #Lbs.
   latex_code5, vals_dict = Fp_final_calc()
   st.latex(latex_code5)
