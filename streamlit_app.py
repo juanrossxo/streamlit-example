@@ -15,12 +15,12 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
   Ip = [1.0,1.5]
   Ip1 = pd.DataFrame(Ip)
   Ip = st.selectbox('Importance Factor, Ip (ASCE7-16 13.1.3)', Ip1)
-  W = st.number_input("Weight of the Equipment, Wp (kips)", format='%f')
-  z = st.number_input("Elevation of the Equipment, z (ft.)", format='%f')
-  h = st.number_input("Height of Building, h (ft.)", format='%f')
-  length = st.number_input("Length of Equipment (long side), L (ft.)", format='%f')
-  width = st.number_input("Width of Equipment (short side), W (ft.)", format='%f')
-  height = st.number_input("Height of Equipment, H (ft.)", format='%f')
+  W = st.number_input("Weight of the Equipment, Wp (kips)", format='%.9g')
+  z = st.number_input("Elevation of the Equipment, z (ft.)", format='%g')
+  h = st.number_input("Height of Building, h (ft.)", format='%g')
+  length = st.number_input("Length of Equipment (long side), L (ft.)", format='%g')
+  width = st.number_input("Width of Equipment (short side), W (ft.)", format='%g')
+  height = st.number_input("Height of Equipment, H (ft.)", format='%g')
   #COG
   COG = 0.5*height
   COG_other = st.checkbox('Check to input other COG height',help='Default C.O.G. of unit used is 50% ht.')
