@@ -95,7 +95,7 @@ with st.expander('Fp Calculations',expanded=True):
   def Fp1_calc(ap: float, Sds: float, W: float, rp: float, Ip: float, z: float, h: float):
     F_p_1 = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)) #Kips
   latex_code2, vals_dict = Fp1_calc(ap, Sds, W, rp, Ip, z, h)
-  st.write(latex_code2)
+  st.latex(latex_code2)
   
   st.write('but not less than:')
   @handcalc()
