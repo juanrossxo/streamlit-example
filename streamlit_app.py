@@ -91,21 +91,21 @@ if rp==0 or h==0 or Ip==0:
 
 #Fp calcs
 with st.expander('Fp Calculations',expanded=True):
-  @handcalc(precision=3)
+  @handcalc()
   def Fp1_calc(ap: float, Sds: float, W: float, rp: float, Ip: float, z: float, h: float):
     F_p_1 = (0.4*ap*Sds*W)/(rp/Ip) * (1+2*(z/h)) #Kips
   latex_code2, vals_dict = Fp1_calc(ap, Sds, W, rp, Ip, z, h)
   st.write(latex_code2)
   
   st.write('but not less than:')
-  @handcalc(3)
+  @handcalc()
   def Fp2_calc():
     F_p_2 = 0.3*Sds*Ip*W #Kips
   latex_code3, vals_dict = Fp2_calc()
   st.latex(latex_code3)
   
   st.write('but also not required to be taken greater than:')
-  @handcalc(precision=3)
+  @handcalc()
   def Fp3_calc():
     F_p_3 = 1.6*Sds*Ip*W #Kips
   latex_code4, vals_dict= Fp3_calc()
@@ -115,7 +115,7 @@ with st.expander('Fp Calculations',expanded=True):
   F_p_1 = (0.4*ap*Sds*W)/(rp/Ip)*(1+2*(z/h))
   F_p_2 = (0.3*Sds*Ip*W)
   F_p_3 = 1.6*Sds*Ip*W
-  @handcalc(precision=3)
+  @handcalc()
   def Fp_final_calc():
     F_p_final = min(max(F_p_1, F_p_2), F_p_3) #Kips
   latex_code5, vals_dict = Fp_final_calc()
