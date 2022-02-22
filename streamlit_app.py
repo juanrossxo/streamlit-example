@@ -19,6 +19,9 @@ with st.expander('Seismic and Equipment Parameters',expanded=True):
   z_h = st.checkbox('Check this box to set z=h (typically conservative)')
   z = st.number_input("Elevation of the Equipment, z (ft.)", format='%g', disabled=z_h)
   h = st.number_input("Height of Building, h (ft.)", format='%g', disabled=z_h)
+  if z_h == TRUE:
+    z = 1
+    h = 1
   length = st.number_input("Length of Equipment (long side), L (ft.)", format='%g')
   width = st.number_input("Width of Equipment (short side), W (ft.)", format='%g')
   height = st.number_input("Height of Equipment, H (ft.)", format='%g')
