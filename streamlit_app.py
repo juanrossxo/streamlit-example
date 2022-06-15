@@ -124,6 +124,7 @@ if overstrength_true:
   with st.expander('\u03A90 Fp Calculations',expanded=True):
     @handcalc()
     def Fp_final_calc2():
+      Omega_0 = o0
       F_p_final = Omega_0*min(max(F_p_1, F_p_2), F_p_3) #lb.
     latex_code6, vals_dict = Fp_final_calc2()
     st.latex(latex_code6)
